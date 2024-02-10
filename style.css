@@ -27,10 +27,15 @@ body {
     margin: 0;
     font-size: 1.5em;
     color: #333;
+    border: 0.1em solid darkgray;
 }
 
 .card p {
     margin: 0;
     font-size: 1em;
     color: #666;
+}
+
+.card .card-class {
+    border: 0.1em solid darkgray;
 }
