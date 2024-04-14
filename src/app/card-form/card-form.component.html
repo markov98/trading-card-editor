@@ -1,17 +1,17 @@
-<form (ngSumbit)="onSubmit(form)" #form="ngForm">
+<form>
     <div>
         <label for="name">Card Name</label>
-        <input type="text" id="name" name="class" ngModel #name="ngModel">
+        <input type="text" id="name" name="name" [(ngModel)]="name">
     </div>
     <div>
         <label for="class">Card Class</label>
-        <input type="text" id="class" name="class" ngModel #class="ngModel">
+        <input type="text" id="class" name="class" [(ngModel)]="class">
     </div>
     <div>
         <label for="description">Card Description</label>
-        <textarea id="description" name="description" ngModel #description="ngModel"></textarea>
+        <textarea id="description" name="description" [(ngModel)]="description"></textarea>
     </div>
     <div>
-        <input type="submit">
+        <input type="submit" value="Update Card" (click)="onSubmit()">
     </div>
 </form>

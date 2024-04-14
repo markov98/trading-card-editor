@@ -10,7 +10,11 @@ import { CardValuesService } from '../card-values.service';
   styleUrl: './card-form.component.css'
 })
 export class CardFormComponent {
+  name: string = '';
+  class: string = '';
+  description: string = '';
+
   constructor(private cardService: CardValuesService) { }
 
-  onSubmit(form: NgForm): void { }
+  onSubmit(): void { this.cardService.updateValues(this.name, this.class, this.description) }
 }

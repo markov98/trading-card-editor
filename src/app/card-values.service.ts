@@ -9,4 +9,10 @@ export class CardValuesService {
   description: string = 'Card Description';
 
   constructor() { }
+
+  updateValues(name: string, cardClass: string, description: string): void {
+    this.name = name;
+    this.class = cardClass;
+    this.description = description;
+  }
 }
