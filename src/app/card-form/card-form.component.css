@@ -1,0 +1,14 @@
+input {
+    width: 20em;
+}
+
+textarea {
+    width: 20em;
+    height: 10em;
+    resize: none;
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+}
