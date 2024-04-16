@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
 import { CardValuesService } from '../card-values.service';
+import { CardInfo } from '../types/CardInfo';
 
 @Component({
   selector: 'app-card-form',
@@ -15,7 +16,16 @@ export class CardFormComponent {
   description: string = '';
   cost: number = 0;
 
+  get values(): CardInfo {
+    return {
+      name: this.name,
+      class: this.class,
+      description: this.description,
+      cost: this.cost
+    }
+  }
+
   constructor(private cardService: CardValuesService) { }
 
-  onSubmit(): void { this.cardService.updateValues(this.name, this.class, this.description) }
+  onSubmit(): void { this.cardService.updateValues(this.values) }
 }
