@@ -11,7 +11,7 @@ import { CardInfo } from '../types/CardInfo';
 })
 export class CardTemplateComponent {
 
-  get values(): CardInfo {
+  get cardValues(): CardInfo {
     return this.valuesService.cardValues;
   }
 
