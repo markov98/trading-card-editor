@@ -11,18 +11,11 @@ import { CardInfo } from '../types/CardInfo';
   styleUrl: './card-form.component.css'
 })
 export class CardFormComponent {
-  name: string = '';
-  class: string = '';
-  description: string = '';
-  cost: number = 0;
-
-  get values(): CardInfo {
-    return {
-      name: this.name,
-      class: this.class,
-      description: this.description,
-      cost: this.cost
-    }
+  values: CardInfo = {
+    name: '',
+    class: '',
+    description: '',
+    cost: 0,
   }
 
   constructor(private cardService: CardValuesService) { }
