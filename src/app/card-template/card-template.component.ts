@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { CardValuesService } from '../card-values.service';
+import { CardInfo } from '../types/CardInfo';
 
 @Component({
   selector: 'app-card-template',
@@ -10,12 +11,8 @@ import { CardValuesService } from '../card-values.service';
 })
 export class CardTemplateComponent {
 
-  get cardValues() {
-    return {
-      name: this.valuesService.name,
-      class: this.valuesService.class,
-      description: this.valuesService.description,
-    }
+  get values(): CardInfo {
+    return this.valuesService.cardValues;
   }
 
   constructor (private valuesService: CardValuesService) { }

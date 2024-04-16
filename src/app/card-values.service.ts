@@ -5,17 +5,16 @@ import { CardInfo } from './types/CardInfo';
   providedIn: 'root'
 })
 export class CardValuesService {
-  name: string = 'Card Name';
-  class: string = 'Card Class';
-  description: string = 'Card Description';
-  cost: number = 0;
+  cardValues: CardInfo = {
+    name: 'Card Name',
+    class: 'Card Class',
+    description: 'Card Description',
+    cost: 0
+  }
 
   constructor() { }
 
-  updateValues(values: CardInfo): void {
-    this.name = values.name;
-    this.class = values.class;
-    this.description = values.description;
-    this.cost = values.cost;
+  updateValues(newValues: CardInfo): void {
+    this.cardValues = newValues;
   }
 }
