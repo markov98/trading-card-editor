@@ -13,6 +13,7 @@ export class CardFormComponent {
   name: string = '';
   class: string = '';
   description: string = '';
+  cost: number = 0;
 
   constructor(private cardService: CardValuesService) { }
 

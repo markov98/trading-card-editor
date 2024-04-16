@@ -1,14 +1,18 @@
 <form>
     <div>
-        <label for="name">Card Name</label>
+        <label for="name">Name</label>
         <input type="text" id="name" name="name" [(ngModel)]="name">
     </div>
     <div>
-        <label for="class">Card Class</label>
+        <label for="class">Class</label>
         <input type="text" id="class" name="class" [(ngModel)]="class">
     </div>
     <div>
-        <label for="description">Card Description</label>
+        <label for="cost">Cost</label>
+        <input type="number" id="cost" name="cost" [(ngModel)]="cost">
+    </div>
+    <div>
+        <label for="description">Description</label>
         <textarea id="description" name="description" [(ngModel)]="description"></textarea>
     </div>
     <div>
