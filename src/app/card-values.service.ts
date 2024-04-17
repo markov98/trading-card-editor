@@ -15,6 +15,6 @@ export class CardValuesService {
   constructor() { }
 
   updateValues(newValues: CardInfo): void {
-    this.cardValues = newValues;
+    this.cardValues = { ...newValues };
   }
 }
