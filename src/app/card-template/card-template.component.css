@@ -32,3 +32,8 @@
 .card .card-class {
     border: 0.1em solid darkgray;
 }
+
+.buttom {
+    display: flex;
+    gap: 1em;
+}

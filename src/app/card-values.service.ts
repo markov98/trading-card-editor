@@ -9,12 +9,13 @@ export class CardValuesService {
     name: 'Card Name',
     class: 'Card Class',
     description: 'Card Description',
-    cost: 0
+    cost: 0,
+    battleStats: null
   }
 
   constructor() { }
 
   updateValues(newValues: CardInfo): void {
-    this.cardValues = { ...newValues };
+    this.cardValues =  newValues;
   }
 }

@@ -16,9 +16,19 @@
         <textarea id="description" name="description" [(ngModel)]="values.description"></textarea>
     </div>
     <div class="check">
-        <input type="checkbox" name="attack/defense" id="attack/defense">
-        <label for="attack/defense">Add Attack and Defense</label>
+        <input type="checkbox" name="addBattleStats" id="addBattleStats" [(ngModel)]="addBattleStats">
+        <label for="addBattleStats">Add Attack and Defense</label>
     </div>
+    <ng-container *ngIf="addBattleStats">
+        <div>
+            <label for="attack">Attack</label>
+            <input type="number" id="attack" name="attack" [(ngModel)]="values.battleStats!.attack">
+        </div>
+        <div>
+            <label for="defense">Defense</label>
+            <input type="number" id="defense" name="defense" [(ngModel)]="values.battleStats!.defense">
+        </div>
+    </ng-container>
     <div>
         <input type="submit" value="Update Card" (click)="onSubmit()">
     </div>

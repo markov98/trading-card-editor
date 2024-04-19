@@ -5,5 +5,9 @@
     <p>{{cardValues.description}}</p>
     <div class="buttom">
         <span>Cost:{{cardValues.cost}}</span>
+        <ng-container *ngIf="cardValues.battleStats">
+            <span>Attack:{{cardValues.battleStats.attack}}</span>
+            <span>Defense:{{cardValues.battleStats.defense}}</span>
+        </ng-container>
     </div>
 </div>
