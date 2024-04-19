@@ -15,6 +15,10 @@
         <label for="description">Description</label>
         <textarea id="description" name="description" [(ngModel)]="values.description"></textarea>
     </div>
+    <div class="check">
+        <input type="checkbox" name="attack/defense" id="attack/defense">
+        <label for="attack/defense">Add Attack and Defense</label>
+    </div>
     <div>
         <input type="submit" value="Update Card" (click)="onSubmit()">
     </div>

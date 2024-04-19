@@ -2,6 +2,10 @@ input {
     width: 20em;
 }
 
+input[type='checkbox'] {
+    width: auto;
+}
+
 textarea {
     width: 20em;
     height: 10em;
@@ -11,4 +15,9 @@ textarea {
 div {
     display: flex;
     flex-direction: column;
+}
+
+.check {
+    flex-direction: row;
+    align-items: left;
 }
