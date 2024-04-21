@@ -4,10 +4,10 @@
     <p class="card-class">{{cardValues.class}}</p>
     <p>{{cardValues.description}}</p>
     <div class="buttom">
-        <span>Cost:{{cardValues.cost}}</span>
+        <span><i class="fa-solid fa-star"></i>{{cardValues.cost}}</span>
         <ng-container *ngIf="cardValues.battleStats">
-            <span>Attack:{{cardValues.battleStats.attack}}</span>
-            <span>Defense:{{cardValues.battleStats.defense}}</span>
+            <span><i class="fa-solid fa-hand-fist"></i>{{cardValues.battleStats.attack}}</span>
+            <span><i class="fa-solid fa-heart-pulse"></i>{{cardValues.battleStats.defense}}</span>
         </ng-container>
     </div>
 </div>
