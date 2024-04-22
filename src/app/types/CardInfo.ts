@@ -3,7 +3,8 @@ export interface CardInfo {
     class: string,
     cost: number,
     battleStats: null | BattleStats
-    description: string
+    description: string,
+    imgUrl: string
 }
 export interface BattleStats {
     attack: number,
