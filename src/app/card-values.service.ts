@@ -10,7 +10,8 @@ export class CardValuesService {
     class: 'Card Class',
     description: 'Card Description',
     cost: 0,
-    battleStats: null
+    battleStats: null,
+    imgUrl: ''
   }
 
   constructor() { }

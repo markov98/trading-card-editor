@@ -17,6 +17,7 @@ export class CardFormComponent {
     class: '',
     description: '',
     cost: 0,
+    imgUrl: '',
     battleStats: {
       attack: 0,
       defense: 0
