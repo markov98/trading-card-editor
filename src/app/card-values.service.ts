@@ -11,7 +11,8 @@ export class CardValuesService {
     description: 'Card Description',
     cost: 0,
     battleStats: null,
-    imgUrl: ''
+    imgUrl: '',
+    color: '#ffffff',
   }
 
   constructor() { }

@@ -19,6 +19,10 @@
         <label for="description">Description</label>
         <textarea id="description" name="description" [(ngModel)]="values.description"></textarea>
     </div>
+    <div>
+        <label for="color">Color</label>
+        <input type="color" id="color" name="color" [(ngModel)]="values.color">
+    </div>
     <div class="check">
         <input type="checkbox" name="addBattleStats" id="addBattleStats" [(ngModel)]="addBattleStats">
         <label for="addBattleStats">Add Attack and Defense</label>

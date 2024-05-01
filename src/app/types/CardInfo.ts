@@ -4,7 +4,8 @@ export interface CardInfo {
     cost: number,
     battleStats: null | BattleStats
     description: string,
-    imgUrl: string
+    imgUrl: string,
+    color: string
 }
 export interface BattleStats {
     attack: number,

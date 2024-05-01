@@ -18,6 +18,7 @@ export class CardFormComponent {
     description: '',
     cost: 0,
     imgUrl: '',
+    color: '#ffffff',
     battleStats: {
       attack: 0,
       defense: 0
@@ -30,7 +31,7 @@ export class CardFormComponent {
 
   onSubmit(): void {
     const valuesForSubmission: CardInfo = JSON.parse(JSON.stringify(this.values));
-    if (!this.addBattleStats) { valuesForSubmission.battleStats = null }
+    if (!this.addBattleStats) { valuesForSubmission.battleStats = null };
     this.cardService.updateValues(valuesForSubmission)
    }
 }
