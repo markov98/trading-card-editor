@@ -2,12 +2,12 @@
 
 .card {
     position: relative;
-    border-radius: 8px;
+    border-radius: 0.5em;
     border: 0.5em black solid;
     overflow: hidden;
     width: 400px;
     height: 600px;
-    padding: 20px;
+    padding: 1em;
     box-sizing: border-box;
 }
 
