@@ -18,7 +18,8 @@ export class CardFormComponent {
     description: '',
     cost: 0,
     imgUrl: '',
-    color: '#ffffff',
+    backgroundColor: '#ffffff',
+    textColor: '#000000',
     battleStats: {
       attack: 0,
       defense: 0

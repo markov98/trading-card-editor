@@ -5,7 +5,8 @@ export interface CardInfo {
     battleStats: null | BattleStats
     description: string,
     imgUrl: string,
-    color: string
+    backgroundColor: string,
+    textColor: string
 }
 export interface BattleStats {
     attack: number,
