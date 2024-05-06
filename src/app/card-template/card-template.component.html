@@ -2,7 +2,7 @@
     <h2>{{cardValues.name}}</h2>
     <img src="{{cardValues.imgUrl || '../../assets/test-img.png'}}" alt="Card Image">
     <p class="card-class">{{cardValues.class}}</p>
-    <p>{{cardValues.description}}</p>
+    <p class="card-desc">{{cardValues.description}}</p>
     <div class="bottom">
         <span><i class="fa-solid fa-star"></i>{{cardValues.cost}}</span>
         <ng-container *ngIf="cardValues.battleStats">
