@@ -5,6 +5,7 @@ import { CardTemplateComponent } from './card-template.component';
 describe('CardTemplateComponent', () => {
   let component: CardTemplateComponent;
   let fixture: ComponentFixture<CardTemplateComponent>;
+  let bannerElement: HTMLElement;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
@@ -15,6 +16,7 @@ describe('CardTemplateComponent', () => {
     fixture = TestBed.createComponent(CardTemplateComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
+    bannerElement  = fixture.nativeElement;
   });
 
   it('should create', () => {
@@ -26,19 +28,16 @@ describe('CardTemplateComponent', () => {
   });
 
   it('should contain h2 with cardValues.name', () => {
-    const bannerElement: HTMLElement = fixture.nativeElement;
     const cardTitle = bannerElement.querySelector('h2')!;
     expect(cardTitle.textContent).toEqual(component.cardValues.name);
   });
 
   it('should contain p with cardValues.class', () => {
-    const bannerElement: HTMLElement = fixture.nativeElement;
     const cardClass = bannerElement.querySelector('.card-class')!;
     expect(cardClass.textContent).toEqual(component.cardValues.class);
   });
 
-  it('should contain p with cardValues.descrtipiton', () => {
-    const bannerElement: HTMLElement = fixture.nativeElement;
+  it('should contain p with cardValues.description', () => {
     const cardDescription = bannerElement.querySelector('.card-desc')!;
     expect(cardDescription.textContent).toEqual(component.cardValues.description);
   });
