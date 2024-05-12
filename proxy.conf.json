@@ -1,0 +1,7 @@
+{
+    "/api": {
+        "target": "https://$host$",
+        "secure": false,
+        "changeOrigin": true
+    }
+}

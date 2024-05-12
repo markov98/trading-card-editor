@@ -21,8 +21,9 @@ export class CardTemplateComponent {
   constructor(private valuesService: CardValuesService) { }
 
   captureImage() {
-    html2canvas(this.cardTemplate.nativeElement).then(canvas => {
-      // TODO: Fix bug not saving img illustration
+    html2canvas(this.cardTemplate.nativeElement, { useCORS: true }).then(canvas => {
+
+      document.body.appendChild(canvas)
       const image = canvas.toDataURL('image/png');
       const link = document.createElement('a');
       link.href = image;
