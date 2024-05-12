@@ -22,7 +22,7 @@ export class CardTemplateComponent {
 
   captureImage() {
     html2canvas(this.cardTemplate.nativeElement).then(canvas => {
-      // TODO: Fix bug of not showing img
+      // TODO: Fix bug not saving img illustration
       const image = canvas.toDataURL('image/png');
       const link = document.createElement('a');
       link.href = image;
