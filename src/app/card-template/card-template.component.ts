@@ -22,8 +22,7 @@ export class CardTemplateComponent {
 
   captureImage() {
     html2canvas(this.cardTemplate.nativeElement, { useCORS: true }).then(canvas => {
-
-      document.body.appendChild(canvas)
+      // It still only works with some images
       const image = canvas.toDataURL('image/png');
       const link = document.createElement('a');
       link.href = image;
