@@ -3,3 +3,10 @@ body {
     color: white;
     font-family: Helvetica, sans-serif;
 }
+
+button, input[type='submit'] {
+    background-color: rgb(45, 45, 45);
+    color: white;
+    border-color: white;
+    cursor: pointer;
+}
